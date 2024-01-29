@@ -1,5 +1,9 @@
-const Img = (imgObj) => {
-  console.log(imgObj);
-  return <img src={imgObj.src} alt={imgObj.alt} />;
-};
+import { Component } from "react";
+
+class Img extends Component {
+  render() {
+    const { src, alt } = this.props;
+    return <img src={src} alt={alt} />;
+  }
+}
 export default Img;
