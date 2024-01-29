@@ -1,14 +1,16 @@
 import "./App.css";
 import Button from "./ButtonComponent";
+import Img from "./ImageComponent";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="flex">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <Button text="reset" />
+        <Img src={"https://placekitten.com/450"} alt={"immagine di prova"} />
+        <Img src={"https://placekitten.com/350"} alt={"immagine di prova 2"} />
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Perri Alessandro - <code>Prova React</code> - D1
         </p>
         <a
           className="App-link"
@@ -18,7 +20,32 @@ const App = () => {
         >
           Learn React
         </a>
-        <Button text="download" />
+        <Button
+          textColor="green"
+          border="15px"
+          margin="1em"
+          bg="yellow"
+          borderStyle="none"
+          w="20%"
+          h="5vh"
+          text="reset"
+          fs="1em"
+          d="inline-block"
+          m="1em"
+        />
+        <Button
+          textColor="purple"
+          border="15px"
+          margin="1em"
+          borderStyle="none"
+          w="20%"
+          bg="yellow"
+          h="5vh"
+          text="download"
+          fs="1em"
+          d="inline-block"
+          m="1em"
+        />
       </header>
     </div>
   );
